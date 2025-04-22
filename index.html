@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Thanks!</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      align-items: center;       /* vertical centering */
+      justify-content: center;   /* horizontal centering */
+      background: #f9f9f9;       /* optional, gives a light grey backdrop */
+      font-family: sans-serif;   /* a nicer default font */
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #333;
+    }
+  </style>
+  <script>
+    window.onload = function(){
+      window.top.close();
+    };
+  </script>
+</head>
+<body>
+  <p>Thanks for your submission!<br>This window will close automatically.</p>
+</body>
+</html>
