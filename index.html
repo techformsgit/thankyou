@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Thanks!</title>
@@ -10,10 +10,10 @@
     }
     body {
       display: flex;
-      align-items: center;       /* vertical centering */
-      justify-content: center;   /* horizontal centering */
-      background: #f9f9f9;       /* optional, gives a light grey backdrop */
-      font-family: sans-serif;   /* a nicer default font */
+      align-items: center;
+      justify-content: center;
+      background: #f9f9f9;
+      font-family: sans-serif;
     }
     p {
       text-align: center;
@@ -22,12 +22,18 @@
     }
   </style>
   <script>
-    window.onload = function(){
-      window.top.close();
+    window.onload = function() {
+      // wait 3 seconds so they can read the thank‑you
+      setTimeout(function() {
+        window.top.close();
+      }, 3000);
     };
   </script>
 </head>
 <body>
-  <p>Thanks for your submission!<br>This window will close automatically.</p>
+  <p>
+    Thanks for your submission!<br>
+    This window will close automatically in 3 seconds.
+  </p>
 </body>
 </html>
